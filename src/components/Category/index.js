@@ -4,7 +4,7 @@ const DEFAULT_IMAGE = 'https://i.imgur.com/dJa0Hpl.jpg'
 
 export const Category = ({ cover = DEFAULT_IMAGE, path, emoji = '?' }) => (
   <Anchor href={path}>
-    <Image src={DEFAULT_IMAGE} alt='animal'/>
+    <Image src={cover} alt='animal'/>
     {emoji}
   </Anchor>
 )
