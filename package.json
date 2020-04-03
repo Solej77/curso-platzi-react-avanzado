@@ -23,6 +23,7 @@
     "@babel/core": "7.9.0",
     "@babel/preset-env": "7.9.0",
     "@babel/preset-react": "7.9.4",
+    "babel-eslint": "10.1.0",
     "babel-loader": "8.1.0",
     "html-webpack-plugin": "4.0.4",
     "standard": "14.3.3",
@@ -31,6 +32,7 @@
     "webpack-dev-server": "3.10.3"
   },
   "dependencies": {
+    "intersection-observer": "0.7.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-icons": "3.9.0",
@@ -42,6 +44,7 @@
     ]
   },
   "eslintConfig": {
+    "parser": "babel-eslint",
     "extends": [
       "./node_moudules/standard/eslintrc.json"
     ]
