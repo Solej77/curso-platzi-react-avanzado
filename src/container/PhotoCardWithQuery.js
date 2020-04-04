@@ -4,6 +4,11 @@ import { useGetPhotos } from '../hooks/useGetPhoto'
 
 export const PhotoCardWithQuery = ({ id }) => {
   const { loading, error, data } = useGetPhotos(id)
+
+  if (loading) return <p>Loading...</p>
+
+  if (error) return <p>Error!</p>
+  
   const { photo = {} } = data
   return <PhotoCard {...photo} />
 }
